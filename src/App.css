@@ -1,0 +1,152 @@
+
+
+
+:root{
+  --primary-white: #fff;
+  --primary-dark: rgba(255,255,255, 0);
+  --primary-red: #ef4035;
+  --primary-hover-red: #f33501;
+  --primary-blue: #4a4ad4;
+}
+
+
+body{
+  font-family: "Roboto Condesed" sans-serif;
+}
+
+
+/***********************************************Navbar*******************************************/
+
+nav{
+  z-index: 2;
+}
+
+.logo{
+  width: 12rem;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+
+nav a.nav-link{
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  cursor: pointer;
+  
+}
+
+nav ul li{
+  text-transform: uppercase;
+
+}
+
+.navbar-nav > li > a{
+  color: var(--primary-white) !important;
+  margin-right: 12px;
+  margin-left: 12px;
+  border-top: 3px solid var(--primary-dark);
+}
+
+.navbar-nav{
+  margin-left: 24%;
+}
+
+.navbar-brand{
+  max-width: 17.25rem;
+  height: 6rem !important;
+  padding: 0 !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:focus{
+  border-top: 3px solid #4a4ad4;
+
+}
+
+.navbar-nav > li > a:hover{
+  color: #4a4ad4 !important;
+}
+
+
+/**********************************************Header*****************************************/
+
+.header-wraper{
+  position: relative;
+  background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.65)), url(30.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto Condesed" sans-serif;
+  z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .main-info h1{
+    font-size: 1.5rem !important;
+  }
+  .typed-text{
+    font-size: 1.3rem !important;
+  }
+}
+
+.main-info{
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  text-shadow: 5px black;
+  letter-spacing: 0.3rem;
+}
+
+
+/***********************Typed text*************************/
+
+.typed-text{
+  font-size: 2rem;
+  color: var(--primary-white);
+  text-shadow: 8px;
+}
+
+/********************** Header main offer button***************************/
+
+.btn-main-offer{
+  border: 2px solid var(--primary-blue);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  margin-top: 2rem;
+  color: var(--primary-white);
+  text-decoration: none;
+}
+
+
+/*********************particles************************/
+.tsparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  transition: .2s ease-in-out;
+}
+
+
+@media(max-width: 768px) {
+  .particle-canvas{
+    display: none;
+  }
+}
